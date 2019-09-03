@@ -1,0 +1,23 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="ThermalVision_Inst"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=3620CE214E21262B93C001AB94B0457D
+   Parent=Material'"/Game/ThirdPersonBP/Blueprints/UI/ThermalVision.ThermalVision"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="CoolFresnel"),ParameterValue=4.000000,ExpressionGUID=A5F3FF574C37D8C8F0199C8066B4B36C)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="HotFresnel"),ParameterValue=2.000000,ExpressionGUID=2212B407438E0739973CD4815B1E6EAB)
+   ScalarParameterValues(2)=(ParameterInfo=(Name="Noise UV Scalar"),ParameterValue=0.750000,ExpressionGUID=4557C02C4879E48FEC42448520959CF1)
+   ScalarParameterValues(3)=(ParameterInfo=(Name="NoisePanner"),ParameterValue=1.500000,ExpressionGUID=FE0597B042454E2B26239EAF86722E56)
+   ScalarParameterValues(4)=(ParameterInfo=(Name="SkyDistance"),ParameterValue=10000.000000,ExpressionGUID=58B736A0451727A9423FD2A7E66D967D)
+   ScalarParameterValues(5)=(ParameterInfo=(Name="RefractionDepthBias"))
+   VectorParameterValues(0)=(ParameterInfo=(Name="CoolGenCool"),ParameterValue=(R=0.000000,G=0.015686,B=0.717647,A=1.000000),ExpressionGUID=A149838F4554E64ADD6EBD828B5B4A85)
+   VectorParameterValues(1)=(ParameterInfo=(Name="CoolGenHot"),ParameterValue=(R=0.000000,G=0.000000,B=0.086275,A=1.000000),ExpressionGUID=985621124B2C97DAD83C0AB57E07F379)
+   VectorParameterValues(2)=(ParameterInfo=(Name="HotGenCool"),ParameterValue=(R=0.219608,G=1.000000,B=0.000000,A=1.000000),ExpressionGUID=4CEBD5424B5DBA41FB8A2FAC5F4BAEED)
+   VectorParameterValues(3)=(ParameterInfo=(Name="HotGenHot"),ParameterValue=(R=1.000000,G=0.050980,B=0.000000,A=1.000000),ExpressionGUID=D290775E419AA7A4037FDC89814D9D27)
+   VectorParameterValues(4)=(ParameterInfo=(Name="SkyColor"),ParameterValue=(R=0.000000,G=0.000000,B=0.086275,A=1.000000),ExpressionGUID=6837507647A2EAAB152BF7B397CABEC2)
+   BasePropertyOverrides=(ShadingModel=MSM_Unlit,OpacityMaskClipValue=0.333300)
+   ReferencedTextureGuids(0)=624C33FA4F94961A402B0899E334ECBD
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=FBECC30345E5671A3E61E083FC68B523
+End Object

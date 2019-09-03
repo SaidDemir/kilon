@@ -1,0 +1,53 @@
+Begin Object Class=/Script/Engine.Material Name="OpacityMaterial"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      MaterialExpressionEditorX=-304
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=722C277C49F33FBF583E628DE851717B
+      Material=Material'"OpacityMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA"'
+      FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(Expression=MaterialExpressionScalarParameter'"OpacityMaterial:MaterialExpressionScalarParameter_0"',InputName="Alpha Threshold"))
+      FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+      FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=AFD6CBEE4A6E32CDCF822A9E6F7C9785
+      Material=Material'"OpacityMaterial"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.500000
+      ParameterName="FadeOut"
+      ExpressionGUID=B066B51D42CEFCE689AE3EBFD6053249
+      MaterialExpressionEditorX=-498
+      MaterialExpressionEditorY=326
+      MaterialExpressionGuid=D6569B5F4AA23E974093478EF1C88A90
+      Material=Material'"OpacityMaterial"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"')
+   OpacityMask=(Expression=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"')
+   BlendMode=BLEND_Masked
+   Expressions(0)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(1)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   MaterialFunctionInfos(0)=(StateId=71028A8D47BF40373A3A0B8AD7B60E53,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.ScreenAlignedPixelToPixelUVs"')
+   MaterialFunctionInfos(1)=(StateId=8FB9DF1A498E856AC59A06A036D8DEE0,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA"')
+   StateId=EB6E5AFF42938A6DFEC0E9AD52487365
+   ReferencedTextureGuids(0)=307757E1458E615C7D97A39E32219707
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=0.500000,UVChannelIndex=0,TextureName="Good64x64TilingNoiseHighFreq",TextureReference=/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=0F15CA7F4CEBDEFD3F988F990A9EEB95
+End Object

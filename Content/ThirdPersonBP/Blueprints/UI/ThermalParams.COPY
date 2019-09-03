@@ -1,0 +1,5 @@
+Begin Object Class=/Script/Engine.MaterialParameterCollection Name="ThermalParams"
+   ScalarParameters(0)=(DefaultValue=48.000000,ParameterName="ResX",Id=E52C961942E19FF984D0D593DA02EB4B)
+   ScalarParameters(1)=(DefaultValue=48.000000,ParameterName="ResY",Id=074AA39E42B82FB4E539D2AAE748F8BF)
+   ScalarParameters(2)=(DefaultValue=0.050000,ParameterName="NoiseMulti",Id=B7A3B7034ED3E265FB2174867D52FE9E)
+End Object

@@ -1,0 +1,168 @@
+Begin Object Class=/Script/UMGEditor.WidgetBlueprint Name="QuickFade"
+   Begin Object Class=/Script/UMG.WidgetTree Name="WidgetTree" Archetype=WidgetTree'/Script/UMGEditor.Default__WidgetBlueprint:WidgetTree'
+      Begin Object Class=/Script/UMG.CanvasPanel Name="CanvasPanel_0"
+         Begin Object Class=/Script/UMG.CanvasPanelSlot Name="CanvasPanelSlot_0"
+         End Object
+      End Object
+      Begin Object Class=/Script/UMG.Image Name="Image_35"
+      End Object
+   End Object
+   Begin Object Class=/Script/UMG.WidgetAnimation Name="Fade"
+      Begin Object Class=/Script/MovieScene.MovieScene Name="Fade"
+         Begin Object Class=/Script/MovieSceneTracks.MovieSceneColorTrack Name="MovieSceneColorTrack_0"
+            Begin Object Class=/Script/MovieSceneTracks.MovieSceneColorSection Name="MovieSceneColorSection_0"
+               Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseInFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneColorSection:EaseInFunction'
+               End Object
+               Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseOutFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneColorSection:EaseOutFunction'
+               End Object
+            End Object
+         End Object
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="EventGraph"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_Event Name="K2Node_Event_1"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_0"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_VariableGet Name="K2Node_VariableGet_0"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Construct"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_0"
+      End Object
+   End Object
+   Begin Object Name="WidgetTree"
+      Begin Object Name="CanvasPanel_0"
+         Begin Object Name="CanvasPanelSlot_0"
+            LayoutData=(Offsets=(Left=-4.888885,Top=-3.607954,Right=1978.378418,Bottom=1144.240601))
+            Parent=CanvasPanel'"QuickFade:WidgetTree.CanvasPanel_0"'
+            Content=Image'"QuickFade:WidgetTree.Image_35"'
+         End Object
+         Slots(0)=CanvasPanelSlot'"CanvasPanelSlot_0"'
+         bExpandedInDesigner=True
+      End Object
+      Begin Object Name="Image_35"
+         Brush=(ResourceObject=Texture2D'"/Game/ThirdPersonBP/Blueprints/UI/black.black"')
+         Slot=CanvasPanelSlot'"QuickFade:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0"'
+      End Object
+      RootWidget=CanvasPanel'"CanvasPanel_0"'
+   End Object
+   Begin Object Name="Fade"
+      Begin Object Name="Fade"
+         Begin Object Name="MovieSceneColorTrack_0"
+            Begin Object Name="MovieSceneColorSection_0"
+               Begin Object Name="EaseInFunction"
+               End Object
+               Begin Object Name="EaseOutFunction"
+               End Object
+               RedCurve=(Times=(()),Values=((Value=1.000000)))
+               GreenCurve=(Times=(()),Values=((Value=1.000000)))
+               BlueCurve=(Times=(()),Values=((Value=1.000000)))
+               AlphaCurve=(Times=((),(Value=30000),(Value=60000)),Values=((),(Value=1.000000),()))
+               Easing=(EaseIn=MovieSceneBuiltInEasingFunction'QuickFade:Fade.Fade.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseInFunction',EaseOut=MovieSceneBuiltInEasingFunction'QuickFade:Fade.Fade.MovieSceneColorTrack_0.MovieSceneColorSection_0.EaseOutFunction')
+               SectionRange=Inclusive:0:Inclusive:60000
+               Signature=2ECA230B49FD909BE50AD784FDBFBA51
+            End Object
+            UniqueTrackName="ColorAndOpacity"
+            PropertyName="ColorAndOpacity"
+            PropertyPath="ColorAndOpacity"
+            Sections(0)=MovieSceneColorSection'"MovieSceneColorSection_0"'
+            DisplayName=NSLOCTEXT("UObjectDisplayNames", "Image:ColorAndOpacity", "Color and Opacity")
+            SortingOrder=0
+            Signature=4754465B41A8033469764BAE648914B3
+         End Object
+         Possessables(0)=(Guid=EE1D9E8B41E80C63F8B80A9259FF4E99,Name="Image_35",PossessedObjectClass=Class'"/Script/UMG.Image"')
+         ObjectBindings(0)=(ObjectGuid=EE1D9E8B41E80C63F8B80A9259FF4E99,BindingName="Image_35",Tracks=(MovieSceneColorTrack'"MovieSceneColorTrack_0"'),SortingOrder=0)
+         PlaybackRange=Inclusive:0:Exclusive:60001
+         DisplayRate=(Numerator=20)
+         EditorData=(ExpansionStates=(("EE1D9E8B41E80C63F8B80A9259FF4E99", ()),("EE1D9E8B41E80C63F8B80A9259FF4E99.MovieSceneColorTrack_0", ())),ViewStart=-0.500002,ViewEnd=5.500018,WorkStart=-0.500002,WorkEnd=5.500018)
+         Signature=06A0C519488FE10EE1B45283801F0A5A
+      End Object
+      MovieScene=MovieScene'"Fade"'
+      AnimationBindings(0)=(WidgetName="Image_35",AnimationGuid=EE1D9E8B41E80C63F8B80A9259FF4E99)
+      DisplayLabel="Fade"
+      Signature=74BF499540FAA5514B0317ADF629E2D0
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_Event_1"
+         EventReference=(MemberParent=Class'"/Script/UMG.UserWidget"',MemberName="Construct")
+         bOverrideFunction=True
+         NodePosY=200
+         bCommentBubblePinned=True
+         NodeGuid=E3CCF89842A232AC1C97CB8A58B8E9EB
+         CustomProperties Pin (PinId=2219D9FE432CB858EF6A40984105844D,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'"/Script/UMG.UserWidget"',MemberName="Construct"),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=9276048B4E4FDC273C69ED844B4C0139,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_0 5E07B5384F256F0E98FFCF9C288F8560,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_0"
+         FunctionReference=(MemberName="PlayAnimation",bSelfContext=True)
+         NodePosX=224
+         NodePosY=208
+         NodeGuid=8899AFC94DA0B1B96FCE10A03594D604
+         CustomProperties Pin (PinId=5E07B5384F256F0E98FFCF9C288F8560,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_Event_1 9276048B4E4FDC273C69ED844B4C0139,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=4259113C4061DC90EB4804981ADABA68,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=50CEA5FB412C7558A8EB2CABDAD16222,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'"/Script/UMG.UserWidget"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=38902C5A4DB8C6DA482327ADB5B67381,PinName="InAnimation",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'"/Script/UMG.WidgetAnimation"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableGet_0 4559815E4CDF5D804F7BEB8BBA1D28B0,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6FFAFBFA4A89487FD4DAA4AC8DD6E0C3,PinName="StartAtTime",PinType.PinCategory="float",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0.000000",AutogeneratedDefaultValue="0.000000",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=EE053EB7409EAA67BCB1128A578E3221,PinName="NumLoopsToPlay",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="1",AutogeneratedDefaultValue="1",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=2744030845CA97492D56E39CFD9961FC,PinName="PlayMode",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Enum'"/Script/UMG.EUMGSequencePlayMode"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="Forward",AutogeneratedDefaultValue="Forward",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=BE4E1AB142B26E808B75EDB174FEFBDD,PinName="PlaybackSpeed",PinType.PinCategory="float",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="1.000000",AutogeneratedDefaultValue="1.000000",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=8EA220514A8F22776FB328B48C874A46,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'"/Script/UMG.UMGSequencePlayer"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_VariableGet_0"
+         VariableReference=(MemberName="Fade",bSelfContext=True)
+         NodePosX=-16
+         NodePosY=352
+         NodeGuid=35C58C804CB5E27C74D89E98E96C6C61
+         CustomProperties Pin (PinId=4559815E4CDF5D804F7BEB8BBA1D28B0,PinName="Fade",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'"/Script/UMG.WidgetAnimation"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_0 38902C5A4DB8C6DA482327ADB5B67381,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7D9D396944660AF26F9330B227851A38,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=WidgetBlueprintGeneratedClass'"/Game/ThirdPersonBP/Blueprints/UI/QuickFade.QuickFade_C"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema=Class'"/Script/BlueprintGraph.EdGraphSchema_K2"'
+      Nodes(0)=K2Node_Event'"K2Node_Event_1"'
+      Nodes(1)=K2Node_CallFunction'"K2Node_CallFunction_0"'
+      Nodes(2)=K2Node_VariableGet'"K2Node_VariableGet_0"'
+      bAllowDeletion=False
+      GraphGuid=6F0609294BCF672CE05542AF76111499
+   End Object
+   Begin Object Name="Construct"
+      Begin Object Name="K2Node_FunctionEntry_0"
+         CustomGeneratedFunctionName="Construct"
+         FunctionReference=(MemberParent=Class'"/Script/UMG.UserWidget"',MemberName="Construct")
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=15590BC84A4F3B0440E7438083C338F8
+         CustomProperties Pin (PinId=A6A20A1D41C67101CE61B7B993043696,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_0 6EA41B4543601D7669A91BB328B098FD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_0"
+         FunctionReference=(MemberName="ExecuteUbergraph_QuickFade",bSelfContext=True)
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=DCEA1D624060B79ACA93CBBC9898FB89
+         CustomProperties Pin (PinId=6EA41B4543601D7669A91BB328B098FD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_0 A6A20A1D41C67101CE61B7B993043696,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=41E78F2B43E4402CFB2BE9BAC6A2082E,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=674783C64C5DF0ED657ECAB106077973,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="self",PinType.PinSubCategoryObject=WidgetBlueprintGeneratedClass'"/Game/ThirdPersonBP/Blueprints/UI/QuickFade.SKEL_QuickFade_C"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=2CE5EEE840D7D99AF070839D29587EF4,PinName="EntryPoint",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema=Class'"/Script/BlueprintGraph.EdGraphSchema_K2"'
+      Nodes(0)=K2Node_FunctionEntry'"K2Node_FunctionEntry_0"'
+      Nodes(1)=K2Node_CallFunction'"K2Node_CallFunction_0"'
+      GraphGuid=694E4BF54DB55F529143518CADCD2E8B
+   End Object
+   Animations(0)=WidgetAnimation'"Fade"'
+   InclusiveWidgets=2
+   EstimatedTemplateSize=2048
+   TickPrediction=OnDemand
+   TickPredictionReason="Anim"
+   WidgetTree="WidgetTree"
+   ParentClass=Class'"/Script/UMG.UserWidget"'
+   UbergraphPages(0)=EdGraph'"EventGraph"'
+   CategorySorting(0)="Event Graph"
+   CategorySorting(1)="Quick Fade"
+   CategorySorting(2)="Animations"
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObjectPath=/Game/ThirdPersonBP/Blueprints/UI/QuickFade.QuickFade:EventGraph,SavedViewOffset=(X=-386.294098,Y=-146.000000),SavedZoomAmount=1.000000)
+   GeneratedClass=WidgetBlueprintGeneratedClass'"QuickFade_C"'
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=855BB30B4D32C52F26781D889414177E
+End Object

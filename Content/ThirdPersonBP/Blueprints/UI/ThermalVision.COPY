@@ -1,0 +1,456 @@
+Begin Object Class=/Script/Engine.Material Name="ThermalVision"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDesaturation Name="MaterialExpressionDesaturation_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPanner Name="MaterialExpressionPanner_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneTexture Name="MaterialExpressionSceneTexture_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_4"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionTextureCoordinate'"ThermalVision:MaterialExpressionTextureCoordinate_1"')
+      B=(Expression=MaterialExpressionMultiply'"ThermalVision:MaterialExpressionMultiply_2"')
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=4EFB513D4AD8699DA5F9439FDFB04BB3
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0"
+      A=(Expression=MaterialExpressionScalarParameter'"ThermalVision:MaterialExpressionScalarParameter_4"')
+      B=(Expression=MaterialExpressionConstant'"ThermalVision:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=-1272
+      MaterialExpressionEditorY=491
+      MaterialExpressionGuid=CAB22FAB4AF5F6D84101C4975A30AF25
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_2"
+      Collection=MaterialParameterCollection'"/Game/ThirdPersonBP/Blueprints/UI/ThermalParams.ThermalParams"'
+      ParameterName="NoiseMulti"
+      ParameterId=B7A3B7034ED3E265FB2174867D52FE9E
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=34CF56BE44EC92AFA2CBC4BEB5B4913C
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0"
+      Input=(Expression=MaterialExpressionSceneTexture'"ThermalVision:MaterialExpressionSceneTexture_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=48
+      MaterialExpressionGuid=D497BDF646BCA6119638E4BA6184611F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1"
+      Input=(Expression=MaterialExpressionSceneTexture'"ThermalVision:MaterialExpressionSceneTexture_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=1056
+      MaterialExpressionGuid=D497BDF646BCA6119638E4BA6184611F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_2"
+      Input=(Expression=MaterialExpressionSceneTexture'"ThermalVision:MaterialExpressionSceneTexture_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      G=True
+      MaterialExpressionEditorX=608
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=B1F2C6D44A9AFBD49FF5CF88BF5B2C3A
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_3"
+      Input=(Expression=MaterialExpressionSceneTexture'"ThermalVision:MaterialExpressionSceneTexture_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      G=True
+      MaterialExpressionEditorX=608
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=B1F2C6D44A9AFBD49FF5CF88BF5B2C3A
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=1.000000
+      MaterialExpressionEditorX=1184
+      MaterialExpressionEditorY=-144
+      MaterialExpressionGuid=85AC3E3F4011945A4363FA94E0DA096B
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      MaterialExpressionEditorX=-1408
+      MaterialExpressionEditorY=528
+      MaterialExpressionGuid=909560C3473A340E8CBF97A869395D8E
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionDesaturation_0"
+      Input=(Expression=MaterialExpressionDivide'"ThermalVision:MaterialExpressionDivide_0"')
+      MaterialExpressionEditorX=1248
+      MaterialExpressionEditorY=-224
+      MaterialExpressionGuid=258CE4E4486DA5B8504C86B16040F7F0
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionSceneTexture'"ThermalVision:MaterialExpressionSceneTexture_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      B=(Expression=MaterialExpressionScalarParameter'"ThermalVision:MaterialExpressionScalarParameter_2"')
+      MaterialExpressionEditorX=1104
+      MaterialExpressionEditorY=-240
+      MaterialExpressionGuid=4CEF35F741011EA8B4221DAFAB49DB0C
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0"
+      ExponentIn=(Expression=MaterialExpressionScalarParameter'"ThermalVision:MaterialExpressionScalarParameter_0"')
+      Normal=(Expression=MaterialExpressionComponentMask'"ThermalVision:MaterialExpressionComponentMask_0"')
+      MaterialExpressionEditorX=192
+      MaterialExpressionEditorY=-96
+      MaterialExpressionGuid=5DC6FC904EBAB345770C2EB7CF9EFAA3
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_1"
+      ExponentIn=(Expression=MaterialExpressionScalarParameter'"ThermalVision:MaterialExpressionScalarParameter_1"')
+      Normal=(Expression=MaterialExpressionComponentMask'"ThermalVision:MaterialExpressionComponentMask_1"')
+      MaterialExpressionEditorX=192
+      MaterialExpressionEditorY=944
+      MaterialExpressionGuid=5DC6FC904EBAB345770C2EB7CF9EFAA3
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionIf_0"
+      A=(Expression=MaterialExpressionComponentMask'"ThermalVision:MaterialExpressionComponentMask_2"')
+      B=(Expression=MaterialExpressionComponentMask'"ThermalVision:MaterialExpressionComponentMask_3"')
+      AGreaterThanB=(Expression=MaterialExpressionLinearInterpolate'"ThermalVision:MaterialExpressionLinearInterpolate_0"')
+      ALessThanB=(Expression=MaterialExpressionLinearInterpolate'"ThermalVision:MaterialExpressionLinearInterpolate_1"')
+      MaterialExpressionEditorX=768
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=AE5106064CF49A26A03A32AA6B742747
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionIf_1"
+      A=(Expression=MaterialExpressionDesaturation'"ThermalVision:MaterialExpressionDesaturation_0"')
+      B=(Expression=MaterialExpressionConstant'"ThermalVision:MaterialExpressionConstant_0"')
+      AGreaterThanB=(Expression=MaterialExpressionVectorParameter'"ThermalVision:MaterialExpressionVectorParameter_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ALessThanB=(Expression=MaterialExpressionIf'"ThermalVision:MaterialExpressionIf_0"')
+      MaterialExpressionEditorX=1440
+      MaterialExpressionEditorY=-96
+      MaterialExpressionGuid=AE5106064CF49A26A03A32AA6B742747
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionVectorParameter'"ThermalVision:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"ThermalVision:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionFresnel'"ThermalVision:MaterialExpressionFresnel_0"')
+      MaterialExpressionEditorX=321
+      MaterialExpressionEditorY=-283
+      MaterialExpressionGuid=C2D0F88F4D9F7037F61AC3889A0E111E
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1"
+      A=(Expression=MaterialExpressionVectorParameter'"ThermalVision:MaterialExpressionVectorParameter_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"ThermalVision:MaterialExpressionVectorParameter_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression=MaterialExpressionFresnel'"ThermalVision:MaterialExpressionFresnel_1"')
+      MaterialExpressionEditorX=400
+      MaterialExpressionEditorY=592
+      MaterialExpressionGuid=C2D0F88F4D9F7037F61AC3889A0E111E
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionTextureCoordinate'"ThermalVision:MaterialExpressionTextureCoordinate_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"ThermalVision:MaterialExpressionScalarParameter_3"')
+      MaterialExpressionEditorX=-1240
+      MaterialExpressionEditorY=283
+      MaterialExpressionGuid=5F5268F5441F09C7F06744815D3D4A3D
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionTextureSample'"ThermalVision:MaterialExpressionTextureSample_0"',OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionCollectionParameter'"ThermalVision:MaterialExpressionCollectionParameter_2"')
+      MaterialExpressionEditorX=-626
+      MaterialExpressionEditorY=404
+      MaterialExpressionGuid=3C34572A4DFC273E5AAEE9BD2E165D28
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionPanner_0"
+      Coordinate=(Expression=MaterialExpressionMultiply'"ThermalVision:MaterialExpressionMultiply_1"')
+      Speed=(Expression=MaterialExpressionAppendVector'"ThermalVision:MaterialExpressionAppendVector_0"')
+      MaterialExpressionEditorX=-1096
+      MaterialExpressionEditorY=283
+      MaterialExpressionGuid=A943722948B11C5407C64F8E6D951997
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=2.000000
+      ParameterName="HotFresnel"
+      ExpressionGUID=2212B407438E0739973CD4815B1E6EAB
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=-144
+      MaterialExpressionGuid=F5BF040D460C0C6102FF38AE7F29E789
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=4.000000
+      ParameterName="CoolFresnel"
+      ExpressionGUID=A5F3FF574C37D8C8F0199C8066B4B36C
+      MaterialExpressionEditorX=-16
+      MaterialExpressionEditorY=912
+      MaterialExpressionGuid=F5BF040D460C0C6102FF38AE7F29E789
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=10000.000000
+      ParameterName="SkyDistance"
+      ExpressionGUID=58B736A0451727A9423FD2A7E66D967D
+      MaterialExpressionEditorX=832
+      MaterialExpressionEditorY=-144
+      MaterialExpressionGuid=F5BF040D460C0C6102FF38AE7F29E789
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=0.750000
+      ParameterName="Noise UV Scalar"
+      ExpressionGUID=4557C02C4879E48FEC42448520959CF1
+      MaterialExpressionEditorX=-1464
+      MaterialExpressionEditorY=331
+      MaterialExpressionGuid=28D3AB504A59054D12A636BF6E2848B5
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4"
+      DefaultValue=1.500000
+      ParameterName="NoisePanner"
+      ExpressionGUID=FE0597B042454E2B26239EAF86722E56
+      MaterialExpressionEditorX=-1440
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=3301A4714E0694F3E3C83CA26BC9FE4E
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_0"
+      Coordinates=(Expression=MaterialExpressionAdd'"ThermalVision:MaterialExpressionAdd_0"')
+      SceneTextureId=PPI_WorldNormal
+      MaterialExpressionEditorX=-224
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=9B375A3B47318700284EA684BBC494E6
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_1"
+      Coordinates=(Expression=MaterialExpressionAdd'"ThermalVision:MaterialExpressionAdd_0"')
+      SceneTextureId=PPI_WorldNormal
+      MaterialExpressionEditorX=-256
+      MaterialExpressionEditorY=1120
+      MaterialExpressionGuid=9B375A3B47318700284EA684BBC494E6
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_2"
+      Coordinates=(Expression=MaterialExpressionAdd'"ThermalVision:MaterialExpressionAdd_0"')
+      SceneTextureId=PPI_SceneDepth
+      MaterialExpressionEditorX=336
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=9B375A3B47318700284EA684BBC494E6
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_3"
+      Coordinates=(Expression=MaterialExpressionAdd'"ThermalVision:MaterialExpressionAdd_0"')
+      SceneTextureId=PPI_CustomDepth
+      MaterialExpressionEditorX=336
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=9B375A3B47318700284EA684BBC494E6
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionSceneTexture_4"
+      SceneTextureId=PPI_SceneDepth
+      MaterialExpressionEditorX=816
+      MaterialExpressionEditorY=-320
+      MaterialExpressionGuid=9B375A3B47318700284EA684BBC494E6
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-1443
+      MaterialExpressionEditorY=257
+      MaterialExpressionGuid=AAA0F06842BD8BB899389B9E8F89C0B8
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1"
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=AAA0F06842BD8BB899389B9E8F89C0B8
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionPanner'"ThermalVision:MaterialExpressionPanner_0"')
+      Texture=Texture2D'"/Game/ThirdPersonBP/Blueprints/UI/NoiseMask.NoiseMask"'
+      MaterialExpressionEditorX=-936
+      MaterialExpressionEditorY=283
+      MaterialExpressionGuid=6B331AFA4130607D3964268DA152254A
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=1.000000,G=0.050980,B=0.000000,A=1.000000)
+      ParameterName="HotGenHot"
+      ExpressionGUID=D290775E419AA7A4037FDC89814D9D27
+      MaterialExpressionEditorX=-16
+      MaterialExpressionEditorY=-576
+      MaterialExpressionGuid=AE57F0434E59154C1E1C16BFB2751B2F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.337255,G=1.000000,B=0.000000,A=1.000000)
+      ParameterName="HotGenCool"
+      ExpressionGUID=4CEBD5424B5DBA41FB8A2FAC5F4BAEED
+      MaterialExpressionEditorX=-16
+      MaterialExpressionEditorY=-352
+      MaterialExpressionGuid=AE57F0434E59154C1E1C16BFB2751B2F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=0.000000,G=0.000000,B=0.086275,A=1.000000)
+      ParameterName="CoolGenHot"
+      ExpressionGUID=985621124B2C97DAD83C0AB57E07F379
+      MaterialExpressionEditorX=-48
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=AE57F0434E59154C1E1C16BFB2751B2F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_3"
+      DefaultValue=(R=0.000000,G=0.015686,B=0.717647,A=1.000000)
+      ParameterName="CoolGenCool"
+      ExpressionGUID=A149838F4554E64ADD6EBD828B5B4A85
+      MaterialExpressionEditorX=-48
+      MaterialExpressionEditorY=704
+      MaterialExpressionGuid=AE57F0434E59154C1E1C16BFB2751B2F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_4"
+      DefaultValue=(R=0.000000,G=0.000000,B=0.086275,A=1.000000)
+      ParameterName="SkyColor"
+      ExpressionGUID=6837507647A2EAAB152BF7B397CABEC2
+      MaterialExpressionEditorX=992
+      MaterialExpressionEditorY=-64
+      MaterialExpressionGuid=AE57F0434E59154C1E1C16BFB2751B2F
+      Material=Material'"ThermalVision"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionIf'"MaterialExpressionIf_1"')
+   MaterialDomain=MD_PostProcess
+   EditorX=1680
+   EditorY=-32
+   Expressions(0)=MaterialExpressionIf'"MaterialExpressionIf_1"'
+   Expressions(1)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_0"'
+   Expressions(2)=MaterialExpressionFresnel'"MaterialExpressionFresnel_0"'
+   Expressions(3)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_0"'
+   Expressions(4)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(5)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(6)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(7)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(8)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_1"'
+   Expressions(9)=MaterialExpressionFresnel'"MaterialExpressionFresnel_1"'
+   Expressions(10)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_1"'
+   Expressions(11)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(12)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_1"'
+   Expressions(13)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_2"'
+   Expressions(14)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_3"'
+   Expressions(15)=MaterialExpressionIf'"MaterialExpressionIf_0"'
+   Expressions(16)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_2"'
+   Expressions(17)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_3"'
+   Expressions(18)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_2"'
+   Expressions(19)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_3"'
+   Expressions(20)=MaterialExpressionSceneTexture'"MaterialExpressionSceneTexture_4"'
+   Expressions(21)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_4"'
+   Expressions(22)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(23)=MaterialExpressionDivide'"MaterialExpressionDivide_0"'
+   Expressions(24)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(25)=MaterialExpressionDesaturation'"MaterialExpressionDesaturation_0"'
+   Expressions(26)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   Expressions(27)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(28)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(29)=MaterialExpressionPanner'"MaterialExpressionPanner_0"'
+   Expressions(30)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_4"'
+   Expressions(31)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_0"'
+   Expressions(32)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(33)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(34)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(35)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(36)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_1"'
+   Expressions(37)=MaterialExpressionCollectionParameter'"MaterialExpressionCollectionParameter_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   ParameterGroupData(4)=(GroupName="None")
+   ParameterGroupData(5)=(GroupName="None")
+   ParameterGroupData(6)=(GroupName="None")
+   ParameterGroupData(7)=(GroupName="None")
+   ParameterGroupData(8)=(GroupName="None")
+   ParameterGroupData(9)=(GroupName="None")
+   MaterialParameterCollectionInfos(0)=(StateId=B4BCDA574FFA9C7B05D93A81A1E402C2,ParameterCollection=MaterialParameterCollection'"/Game/ThirdPersonBP/Blueprints/UI/ThermalParams.ThermalParams"')
+   bCanMaskedBeAssumedOpaque=True
+   BlendableLocation=BL_BeforeTonemapping
+   StateId=8672D5A448383D3289EE3785159B8F42
+   ReferencedTextureGuids(0)=624C33FA4F94961A402B0899E334ECBD
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=FB047EED4E3136A949BB93AA9C422691
+End Object
